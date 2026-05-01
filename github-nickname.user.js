@@ -1,17 +1,17 @@
 // ==UserScript==
 // @name         github-nickname
+// @namespace    https://github.com/fantasticmao/user-scripts
+// @copyright    MIT License
 // @version      1.0
-// @author       fantasticmao
 // @description  Add nicknames to GitHub feed and profile pages, configured from a remote JSON file
-// @match        *://github.com/*
 // @icon         https://avatars.githubusercontent.com/u/20675747?s=80
 // @grant        GM_xmlhttpRequest
+// @author       fantasticmao
+// @homepage     https://github.com/fantasticmao
+// @match        https://github.com/*
 // @run-at       document-idle
-// @namespace    https://github.com/fantasticmao/user-script
-// @updateURL    https://raw.githubusercontent.com/fantasticmao/user-script/refs/heads/main/github-nickname.user.js
-// @downloadURL  https://raw.githubusercontent.com/fantasticmao/user-script/refs/heads/main/github-nickname.user.js
-// @supportURL   https://github.com/fantasticmao/user-script
-// @homepageURL  https://github.com/fantasticmao/user-script
+// @updateURL    https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js
+// @downloadURL  https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js
 // ==/UserScript==
 
 (function () {
