@@ -6,6 +6,9 @@
 // @description  Add nicknames to GitHub feed and profile pages, configured from a remote JSON file
 // @icon         https://avatars.githubusercontent.com/u/20675747?s=80
 // @grant        GM_xmlhttpRequest
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_registerMenuCommand
 // @author       fantasticmao
 // @homepage     https://github.com/fantasticmao
 // @match        https://github.com/*
@@ -17,15 +20,35 @@
 (function () {
   "use strict";
 
-  var NICKNAME_URL = "https://example.com/nicknames.json";
   var NICKNAME_ATTR = "data-nickname-added";
-
   var nicknameMap = {};
 
-  function fetchNicknames() {
+  // Configuration
+
+  GM_registerMenuCommand("Config nickname", function () {
+    var current = GM_getValue("nicknameUrl", "");
+    var url = prompt("Enter config URL:", current);
+    if (url !== null) {
+      GM_setValue("nicknameUrl", url);
+      if (url) {
+        fetchNicknames(url);
+      }
+    }
+  });
+
+  var nicknameUrl = GM_getValue("nicknameUrl", "");
+  if (!nicknameUrl) {
+    console.warn("[github-nickname] nicknameUrl is not configured, exiting.");
+    return;
+  }
+  fetchNicknames(nicknameUrl);
+
+  // Data fetching
+
+  function fetchNicknames(url) {
     GM_xmlhttpRequest({
       method: "GET",
-      url: NICKNAME_URL,
+      url: url,
       responseType: "json",
       onload: function (response) {
         if (response.status === 200 && response.response) {
@@ -45,6 +68,8 @@
     });
   }
 
+  // DOM helpers
+
   function getUsernameFromLink(el) {
     if (!el.textContent.trim()) return null;
     var href = el.getAttribute("href");
@@ -60,6 +85,8 @@
     el.textContent = el.textContent.trim() + " (" + nickname + ")";
     console.debug("[github-nickname] added nickname:", username, "->", nickname);
   }
+
+  // Page processing
 
   function processFeedPage() {
     var links = document.querySelectorAll(
@@ -90,6 +117,8 @@
     }
   }
 
+  // Observers & event listeners
+
   var debounceTimer = null;
   var observer = new MutationObserver(function () {
     clearTimeout(debounceTimer);
@@ -113,6 +142,4 @@
     console.debug("[github-nickname] popstate detected, path:", location.pathname);
     processPage();
   });
-
-  fetchNicknames();
 })();
