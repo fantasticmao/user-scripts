@@ -2,7 +2,7 @@
 // @name         github-nickname
 // @namespace    https://github.com/fantasticmao/user-scripts
 // @copyright    MIT License
-// @version      1.0
+// @version      1.1
 // @description  Add nicknames to GitHub feed and profile pages, configured from a remote JSON file
 // @icon         https://avatars.githubusercontent.com/u/20675747?s=80
 // @grant        GM_xmlhttpRequest
@@ -79,7 +79,7 @@
   }
 
   function addNickname(el, username) {
-    var nickname = nicknameMap[username.toLowerCase()];
+    var nickname = nicknameMap[username];
     if (!nickname || el.hasAttribute(NICKNAME_ATTR)) return;
     el.setAttribute(NICKNAME_ATTR, "true");
     el.textContent = el.textContent.trim() + " (" + nickname + ")";
