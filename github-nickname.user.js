@@ -2,7 +2,7 @@
 // @name         github-nickname
 // @namespace    https://github.com/fantasticmao/user-scripts
 // @copyright    MIT License
-// @version      1.1
+// @version      1.2
 // @description  Add nicknames to GitHub feed and profile pages, configured from a remote JSON file
 // @icon         https://avatars.githubusercontent.com/u/20675747?s=80
 // @grant        GM_xmlhttpRequest
@@ -26,22 +26,62 @@
   // Configuration
 
   GM_registerMenuCommand("Config nickname", function () {
-    var current = GM_getValue("nicknameUrl", "");
-    var url = prompt("Enter config URL:", current);
-    if (url !== null) {
-      GM_setValue("nicknameUrl", url);
-      if (url) {
-        fetchNicknames(url);
+    var currentJson = GM_getValue("nicknameJson", "");
+    var currentUrl = GM_getValue("nicknameUrl", "");
+    var hint = "[not configured]";
+    var value = "";
+    if (currentJson) {
+      hint = "[current JSON mode]";
+      value = currentJson;
+    } else if (currentUrl) {
+      hint = "[current URL mode]";
+      value = currentUrl;
+    }
+    var input = prompt("Enter nickname config: " + hint, value);
+    if (input === null) return;
+    input = input.trim();
+    if (!input) {
+      GM_setValue("nicknameUrl", "");
+      GM_setValue("nicknameJson", "");
+      return;
+    }
+    if (input.startsWith("http://") || input.startsWith("https://")) {
+      GM_setValue("nicknameUrl", input);
+      GM_setValue("nicknameJson", "");
+      fetchNicknames(input);
+    } else {
+      try {
+        JSON.parse(input);
+      } catch (e) {
+        alert("[github-nickname] invalid JSON input: " + e.message);
+        return;
       }
+      GM_setValue("nicknameJson", input);
+      GM_setValue("nicknameUrl", "");
+      nicknameMap = JSON.parse(input);
+      console.debug(
+        "[github-nickname] nicknames loaded from JSON, count:",
+        Object.keys(nicknameMap).length,
+      );
+      processPage();
     }
   });
 
+  var nicknameJson = GM_getValue("nicknameJson", "");
   var nicknameUrl = GM_getValue("nicknameUrl", "");
-  if (!nicknameUrl) {
+  if (nicknameJson) {
+    nicknameMap = JSON.parse(nicknameJson);
+    console.debug(
+      "[github-nickname] nicknames loaded from JSON, count:",
+      Object.keys(nicknameMap).length,
+    );
+    processPage();
+  } else if (nicknameUrl) {
+    fetchNicknames(nicknameUrl);
+  } else {
     console.warn("[github-nickname] nicknameUrl is not configured, exiting.");
     return;
   }
-  fetchNicknames(nicknameUrl);
 
   // Data fetching
 
