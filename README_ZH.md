@@ -6,29 +6,27 @@ README [English](README.md) | [中文](README_ZH.md)
 
 这是 FantasticMao 的 Tampermonkey 用户脚本集合，用于增强和定制网页浏览体验。每个脚本都专注于解决特定的需求，让日常网页使用更加便捷。
 
-## 脚本列表
-
-| 站点                                                                                  | 脚本名称        | 功能描述                               | 链接                                                                                                        |
+|                                                                                       | 脚本名称        | 功能描述                               | 链接                                                                                                        |
 | ------------------------------------------------------------------------------------- | --------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | <img src="https://github.githubassets.com/favicons/favicon-dark.svg" height="16px" /> | github-nickname | 在 GitHub 首页和个人主页为用户添加昵称 | [安装](https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js) |
 
 ## 下载安装
 
-### 1. 安装 Tampermonkey 扩展
+### 安装 Tampermonkey
 
-首先需要在浏览器中安装 Tampermonkey 扩展：
+前置需要在浏览器中安装 Tampermonkey 扩展
 
 - [Chrome 版本](https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 - [Firefox 版本](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 - [Edge 版本](https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd)
 
-### 2. 安装用户脚本
+### 安装用户脚本
 
-点击上方表格中的安装链接，Tampermonkey 会自动弹出安装确认窗口，点击「安装」即可。
+选择上方表格中对应脚本的安装链接，Tampermonkey 会自动弹出安装确认窗口，点击「安装」即可。
 
 ## 快速开始
 
-### github-nickname
+### github-nickname 脚本
 
 **效果预览**
 
@@ -36,24 +34,24 @@ README [English](README.md) | [中文](README_ZH.md)
 
 **配置方式**
 
-| 配置模式  | 说明                                           | 配置入口                             | 配置示例                             |
-| --------- | ---------------------------------------------- | ------------------------------------ | ------------------------------------ |
-| JSON 模式 | 直接输入 JSON 字符串，适合少量用户昵称         | Tampermonkey 菜单 -> Config nickname | `{"torvalds": "Linux 之父"}`         |
-| URL 模式  | 远程 JSON 文件地址，适合大量用户昵称或团队共享 | Tampermonkey 菜单 -> Config nickname | `https://example.com/nicknames.json` |
+| 配置模式  | 说明                                               | 配置入口                             | 配置示例                             |
+| --------- | -------------------------------------------------- | ------------------------------------ | ------------------------------------ |
+| JSON 模式 | 输入 JSON 字符串，适合少量用户昵称                 | Tampermonkey 菜单 -> Config nickname | `{"torvalds": "Linux 之父"}`         |
+| URL 模式  | 输入 JSON 远程文件地址，适合大量用户昵称或团队共享 | Tampermonkey 菜单 -> Config nickname | `https://example.com/nicknames.json` |
 
 **配置步骤**
 
 1. 点击浏览器工具栏中的 Tampermonkey 图标
 2. 选择「Config nickname」菜单项
-3. 在弹出的对话框中输入 JSON 字符串或远程 URL 地址
+3. 在弹出的对话框中输入 JSON 字符串或 URL 地址
 4. 点击确定保存配置
 
 **JSON 格式**
 
 ```json
 {
-  "github用户名": "显示的昵称",
-  "another-user": "另一个昵称"
+  "username": "昵称",
+  "another-username": "另一个昵称"
 }
 ```
 
