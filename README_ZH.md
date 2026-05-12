@@ -30,7 +30,7 @@ FantasticMao 的 Tampermonkey 用户脚本集合，用于增强和定制网页�
 
 **效果预览**
 
-![github-nickname preview](docs/github-nickname-preview.png)
+![github-nickname preview](https://rawgithub.fantasticmao.cn/user-scripts/refs/heads/main/docs/github-nickname-preview.png)
 
 **配置方式**
 
@@ -43,11 +43,11 @@ FantasticMao 的 Tampermonkey 用户脚本集合，用于增强和定制网页�
 
 点击浏览器工具栏中的 Tampermonkey 图标，选择「Config nickname」菜单项
 
-![github-nickname usage](docs/github-nickname-usage-1.png)
+![github-nickname usage](https://rawgithub.fantasticmao.cn/user-scripts/refs/heads/main/docs/github-nickname-usage-1.png)
 
 在弹出的对话框中输入 JSON 字符串或 URL 地址，点击确定保存配置
 
-![github-nickname usage](docs/github-nickname-usage-2.png)
+![github-nickname usage](https://rawgithub.fantasticmao.cn/user-scripts/refs/heads/main/docs/github-nickname-usage-2.png)
 
 **JSON 格式**
 

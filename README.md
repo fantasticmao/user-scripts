@@ -30,7 +30,7 @@ Click the installation link for the corresponding script in the table above. Tam
 
 **Preview**
 
-![github-nickname preview](docs/github-nickname-preview.png)
+![github-nickname preview](https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/docs/github-nickname-preview.png)
 
 **Configuration**
 
@@ -43,11 +43,11 @@ Click the installation link for the corresponding script in the table above. Tam
 
 Click the Tampermonkey icon in the browser toolbar and select the "Config nickname" menu item
 
-![github-nickname usage](docs/github-nickname-usage-1.png)
+![github-nickname usage](https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/docs/github-nickname-usage-1.png)
 
 In the dialog that appears, enter a JSON string or URL and click OK to save the configuration
 
-![github-nickname usage](docs/github-nickname-usage-2.png)
+![github-nickname usage](https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/docs/github-nickname-usage-2.png)
 
 **JSON Format**
 
