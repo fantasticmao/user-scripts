@@ -5,7 +5,7 @@
 // @copyright          2026 fantasticmao
 // @license            MIT License
 // @version            1.3
-// @description        Add nicknames to GitHub feed and profile pages, configured based on JSON content or remote URL.
+// @description        Add nicknames for users on GitHub feed and profile pages, configured based on JSON content or remote URL.
 // @description:zh-CN  在 GitHub 动态页和个人主页为用户添加昵称，基于 JSON 内容或远程 URL 配置。
 // @icon               https://avatars.githubusercontent.com/u/20675747?s=80
 // @grant              GM_xmlhttpRequest
