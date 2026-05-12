@@ -4,11 +4,11 @@ README [English](README.md) | [中文](README_ZH.md)
 
 ## 这是什么
 
-这是 FantasticMao 的 Tampermonkey 用户脚本集合，用于增强和定制网页浏览体验。每个脚本都专注于解决特定的需求，让日常网页使用更加便捷。
+FantasticMao 的 Tampermonkey 用户脚本集合，用于增强和定制网页浏览体验，每个脚本都专注于解决特定的需求，让日常网页使用更加便捷。
 
-|                                                                                       | 脚本名称        | 功能描述                               | 链接                                                                                                        |
-| ------------------------------------------------------------------------------------- | --------------- | -------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| <img src="https://github.githubassets.com/favicons/favicon-dark.svg" height="16px" /> | github-nickname | 在 GitHub 首页和个人主页为用户添加昵称 | [安装](https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js) |
+|                                                                                       | 脚本名称        | 功能描述                                 | 链接                                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------- | --------------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.githubassets.com/favicons/favicon-dark.svg" height="16px" /> | github-nickname | 在 GitHub 动态页和个人主页为用户添加昵称 | [首选](https://rawgithub.fantasticmao.cn/user-scripts/refs/heads/main/github-nickname.user.js) [备用](https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js) |
 
 ## 下载安装
 
