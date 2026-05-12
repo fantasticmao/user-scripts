@@ -6,9 +6,9 @@ README [English](README.md) | [中文](README_ZH.md)
 
 A collection of Tampermonkey userscripts by FantasticMao, designed to enhance and customize the web browsing experience. Each script focuses on solving specific needs, making daily web usage more convenient.
 
-|                                                                                       | Script Name     | Description                                              | Link                                                                                                           |
-| ------------------------------------------------------------------------------------- | --------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| <img src="https://github.githubassets.com/favicons/favicon-dark.svg" height="16px" /> | github-nickname | Add nicknames for users on GitHub feed and profile pages | [Install](https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js) |
+|                                                                                  | Script Name     | Description                                              | Link                                                                                                           |
+| -------------------------------------------------------------------------------- | --------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.githubassets.com/favicons/favicon.svg" height="16px" /> | github-nickname | Add nicknames for users on GitHub feed and profile pages | [Install](https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js) |
 
 ## Download and Install
 
