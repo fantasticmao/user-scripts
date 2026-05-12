@@ -30,7 +30,7 @@ FantasticMao 的 Tampermonkey 用户脚本集合，用于增强和定制网页�
 
 **效果预览**
 
-![github-nickname usage](docs/github-nickname.png)
+![github-nickname preview](docs/github-nickname-preview.png)
 
 **配置方式**
 
@@ -41,10 +41,13 @@ FantasticMao 的 Tampermonkey 用户脚本集合，用于增强和定制网页�
 
 **配置步骤**
 
-1. 点击浏览器工具栏中的 Tampermonkey 图标
-2. 选择「Config nickname」菜单项
-3. 在弹出的对话框中输入 JSON 字符串或 URL 地址
-4. 点击确定保存配置
+点击浏览器工具栏中的 Tampermonkey 图标，选择「Config nickname」菜单项
+
+![github-nickname usage](docs/github-nickname-usage-1.png)
+
+在弹出的对话框中输入 JSON 字符串或 URL 地址，点击确定保存配置
+
+![github-nickname usage](docs/github-nickname-usage-2.png)
 
 **JSON 格式**
 
