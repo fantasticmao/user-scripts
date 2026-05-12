@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         github-nickname
 // @namespace    https://github.com/fantasticmao/user-scripts
-// @copyright    MIT License
+// @copyright    2026 fantasticmao
+// @license      MIT License
 // @version      1.2
-// @description  Add nicknames to GitHub feed and profile pages, configured from a remote JSON file
+// @description  Add nicknames to GitHub feed and profile pages, configured based on JSON content or remote URL.
 // @icon         https://avatars.githubusercontent.com/u/20675747?s=80
 // @grant        GM_xmlhttpRequest
 // @grant        GM_getValue

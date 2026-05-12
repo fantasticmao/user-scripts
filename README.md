@@ -34,10 +34,10 @@ Click the installation link for the corresponding script in the table above. Tam
 
 **Configuration**
 
-| Config Mode | Description                                                             | Config Entry                         | Example                              |
-| ----------- | ----------------------------------------------------------------------- | ------------------------------------ | ------------------------------------ |
-| JSON Mode   | Enter a JSON string, suitable for a small number of user nicknames      | Tampermonkey menu -> Config nickname | `{"torvalds": "Father of Linux"}`    |
-| URL Mode    | Enter a URL to a remote JSON file, suitable for many nicknames or teams | Tampermonkey menu -> Config nickname | `https://example.com/nicknames.json` |
+| Mode      | Description                                                             | Config Entry                         | Example                              |
+| --------- | ----------------------------------------------------------------------- | ------------------------------------ | ------------------------------------ |
+| JSON Mode | Enter a JSON string, suitable for a small number of user nicknames      | Tampermonkey menu -> Config nickname | `{"torvalds": "Father of Linux"}`    |
+| URL Mode  | Enter a URL to a remote JSON file, suitable for many nicknames or teams | Tampermonkey menu -> Config nickname | `https://example.com/nicknames.json` |
 
 **Configuration Steps**
 

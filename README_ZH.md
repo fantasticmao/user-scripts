@@ -34,7 +34,7 @@ FantasticMao 的 Tampermonkey 用户脚本集合，用于增强和定制网页�
 
 **配置方式**
 
-| 配置模式  | 说明                                               | 配置入口                             | 配置示例                             |
+| 模式      | 说明                                               | 配置入口                             | 配置示例                             |
 | --------- | -------------------------------------------------- | ------------------------------------ | ------------------------------------ |
 | JSON 模式 | 输入 JSON 字符串，适合少量用户昵称                 | Tampermonkey 菜单 -> Config nickname | `{"torvalds": "Linux 之父"}`         |
 | URL 模式  | 输入 JSON 远程文件地址，适合大量用户昵称或团队共享 | Tampermonkey 菜单 -> Config nickname | `https://example.com/nicknames.json` |
