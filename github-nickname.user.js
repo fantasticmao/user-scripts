@@ -1,21 +1,23 @@
 // ==UserScript==
-// @name         github-nickname
-// @namespace    https://github.com/fantasticmao/user-scripts
-// @copyright    2026 fantasticmao
-// @license      MIT License
-// @version      1.2
-// @description  Add nicknames to GitHub feed and profile pages, configured based on JSON content or remote URL.
-// @icon         https://avatars.githubusercontent.com/u/20675747?s=80
-// @grant        GM_xmlhttpRequest
-// @grant        GM_getValue
-// @grant        GM_setValue
-// @grant        GM_registerMenuCommand
-// @author       fantasticmao
-// @homepage     https://github.com/fantasticmao
-// @match        https://github.com/*
-// @run-at       document-idle
-// @updateURL    https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js
-// @downloadURL  https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js
+// @name               github-nickname
+// @name:zh-CN         github 昵称
+// @namespace          https://github.com/fantasticmao/user-scripts
+// @copyright          2026 fantasticmao
+// @license            MIT License
+// @version            1.3
+// @description        Add nicknames to GitHub feed and profile pages, configured based on JSON content or remote URL.
+// @description:zh-CN  在 GitHub 动态页和个人主页为用户添加昵称，基于 JSON 内容或远程 URL 配置。
+// @icon               https://avatars.githubusercontent.com/u/20675747?s=80
+// @grant              GM_xmlhttpRequest
+// @grant              GM_getValue
+// @grant              GM_setValue
+// @grant              GM_registerMenuCommand
+// @author             fantasticmao
+// @homepage           https://github.com/fantasticmao
+// @match              https://github.com/*
+// @run-at             document-idle
+// @updateURL          https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js
+// @downloadURL        https://raw.githubusercontent.com/fantasticmao/user-scripts/refs/heads/main/github-nickname.user.js
 // ==/UserScript==
 
 (function () {
